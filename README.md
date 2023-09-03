@@ -12,4 +12,4 @@ In order to provision the resources locally you have to make sure of the followi
   - admin:repo_hook
   - admin:org_hook
   - delete_repo 
-- GH token stored in SSM Parameter Store as `SecureString` with the name `gh-token`.
+- GH token stored in SSM Parameter Store as `SecureString`. If you don't pass any name, Terraform will search for a parameter with the name `gh-token`.
